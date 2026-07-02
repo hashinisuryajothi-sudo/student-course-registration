@@ -11,7 +11,7 @@
     <!-- Header -->
     <header>
         <h1>ABC Training Institute</h1>
-        <p>STUDENT COURSE REGISTRATION FORM PORTAL</p>
+        <p>Student Course Registration Portal</p>
     </header>
 
     <!-- Navigation -->
@@ -27,31 +27,34 @@
     <!-- Main Container -->
     <div class="container">
 
-        <!-- Registration Form Card -->
+        <!-- Registration Form -->
         <div class="card">
-            <h2>STUDENT REGISTRATION FORM</h2>
+            <h2>Student Course Registration Form</h2>
+            <p class="subtitle">
+                Fill in your details to enroll in our professional training programs.
+            </p>
 
             <form id="registrationForm">
 
                 <div class="form-grid">
 
                     <div class="form-group">
-                        <label>FULL NAME</label>
+                        <label for="name">Full Name</label>
                         <input type="text" id="name" placeholder="Enter Full Name">
                     </div>
 
                     <div class="form-group">
-                        <label>EMAIL</label>
+                        <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Enter Email">
                     </div>
 
                     <div class="form-group">
-                        <label>MOBILE NUMBER</label>
+                        <label for="mobile">Mobile Number</label>
                         <input type="text" id="mobile" placeholder="Enter Mobile Number">
                     </div>
 
                     <div class="form-group">
-                        <label>GENDER</label>
+                        <label>Gender</label>
                         <div class="gender">
                             <label><input type="radio" name="gender" value="Male"> Male</label>
                             <label><input type="radio" name="gender" value="Female"> Female</label>
@@ -59,12 +62,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label>DEPARTMENT</label>
+                        <label for="department">Department</label>
                         <input type="text" id="department" placeholder="Enter Department">
                     </div>
 
                     <div class="form-group">
-                        <label>COURSE</label>
+                        <label for="course">Course</label>
                         <select id="course">
                             <option value="">Select Course</option>
                             <option>Web Development</option>
@@ -76,8 +79,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>SKILLS</label>
-                        <div class="SKILLS">
+                        <label>Skills</label>
+                        <div class="skills">
                             <label><input type="checkbox" value="HTML"> HTML</label>
                             <label><input type="checkbox" value="CSS"> CSS</label>
                             <label><input type="checkbox" value="JavaScript"> JavaScript</label>
@@ -86,27 +89,32 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Date of Birth</label>
+                        <label for="dob">Date of Birth</label>
                         <input type="date" id="dob">
                     </div>
 
                     <div class="form-group" style="grid-column:1/-1;">
-                        <label>ADDRESS</label>
-                        <textarea id="ADDRESS" rows="4" placeholder="Enter Address"></textarea>
+                        <label for="address">Address</label>
+                        <textarea id="address" rows="4" placeholder="Enter Address"></textarea>
                     </div>
 
                 </div>
 
                 <div class="btn-group">
-                    <button type="submit" class="submit-btn">Submit</button>
-                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="submit-btn">
+                        Register Now
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Clear Form
+                    </button>
                 </div>
 
             </form>
         </div>
 
         <!-- Registered Students Table -->
-        <div class="table-section">
+        <div class="card">
             <h2>Registered Students</h2>
 
             <table id="studentTable">
@@ -141,6 +149,25 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card">
+            <h2>Contact Us</h2>
+
+            <p><strong>Address:</strong> Chennai, Tamil Nadu, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> info@abctraining.com</p>
+
+            <br>
+
+            <iframe
+                src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;border-radius:10px;"
+                loading="lazy">
+            </iframe>
         </div>
 
     </div>
